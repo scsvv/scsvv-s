@@ -1,4 +1,6 @@
 import Earth from '@/components/Earth'
+import NewsLetterSub from '@/components/NewsLetterSub'
+import { PageWrapper } from '@/components/PageWrapper'
 import { PostCard } from '@/components/PostCard'
 import { Button } from '@/components/ui/button'
 import { allPosts } from 'contentlayer/generated'
@@ -12,8 +14,8 @@ export default function Home() {
     .slice(0, 4)
 
   return (
-    <div>
-      <div className="flex  flex-col-reverse items-center md:flex-row">
+    <PageWrapper>
+      <div className="flex flex-col-reverse items-center md:flex-row">
         <div className="space-y-7">
           <h1>svsvv&apos;s blog</h1>
           <p>
@@ -26,21 +28,21 @@ export default function Home() {
 
           <Button asChild>
             <a href="https://www.buymeacoffee.com/svsvvs">
-              <CoffeeIcon className="mr-1" /> Buy Me A Coffee!
+              <CoffeeIcon className="mr-3" /> buy me a coffee.
             </a>
           </Button>
         </div>
         <Earth />
       </div>
-
+      <NewsLetterSub />
       <div className="mt-16 border-t border-gray-200 pt-10 dark:border-gray-700">
         <h2>Latest posts:</h2>
       </div>
-      <div className="mt-10 grid grid-cols-1 pt-5 md:grid-cols-2">
+      <div className="mt-2 grid grid-cols-1 pt-5 md:grid-cols-2">
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
         ))}
       </div>
-    </div>
+    </PageWrapper>
   )
 }

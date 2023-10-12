@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function PostCard(post: Post) {
   return (
-    <article className="flex flex-col items-start justify-between">
+    <article className="mb-5 mr-5 flex flex-col items-start justify-between rounded-lg bg-[#f9f8dd] p-5	pt-7 dark:bg-[#10193a]">
       <div className="flex items-center gap-x-4 text-xs">
         <time dateTime={post.date}>
           {format(parseISO(post.date), 'LLLL d, yyyy')}

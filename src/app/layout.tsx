@@ -6,11 +6,12 @@ import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import './global.css'
+import Footer from '@/components/Footer'
 
 const meta = {
   title: 'Skorobohatov Sviatoslav - Blog',
   description:
-    'Sleep deprived father. FE Engineer from Ukraine in Romania. Lover of Pizza and Metal',
+    'Sleep deprived father. FE Engineer from Ukraine in Romania. Lover of Coffee and Metal',
   image: `${WEBSITE_HOST_URL}/og-preview.jpg`,
 }
 
@@ -53,9 +54,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <header className="py-4">
+          <header className="sticky top-0 z-50 py-4 backdrop-blur">
             <Container>
-              <div className="flex items-center justify-between py-6">
+              <div className="flex items-center justify-between pb-2 pt-1">
                 <Navigation />
                 <ThemeSwitch />
               </div>
@@ -66,7 +67,7 @@ export default function RootLayout({
           </main>
           <footer className="py-16">
             <Container>
-              <p>Built by Skorobohatov Sviatoslav</p>
+              <Footer />
             </Container>
           </footer>
         </ThemeProvider>

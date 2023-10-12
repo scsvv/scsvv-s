@@ -2,13 +2,14 @@ import React from 'react'
 import { allPosts } from 'contentlayer/generated'
 import { PostCard } from '@/components/PostCard'
 import { compareDesc } from 'date-fns'
+import { PageWrapper } from '@/components/PageWrapper'
 
 export default function page() {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
   )
   return (
-    <div>
+    <PageWrapper>
       <div className="">
         <h2>Latest posts:</h2>
       </div>
@@ -17,6 +18,6 @@ export default function page() {
           <PostCard key={idx} {...post} />
         ))}
       </div>
-    </div>
+    </PageWrapper>
   )
 }
