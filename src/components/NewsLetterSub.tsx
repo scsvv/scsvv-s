@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 function NewsLetterSub() {
   return (
-    <div className="mx-auto mt-14 w-1/2 pt-3 backdrop-blur-sm">
+    <div className=" mt-14 w-1/2 pt-3 backdrop-blur-sm">
       <h2 className="text-xl">Subscribe to the newsletter!</h2>
       <p className="text-sm italic">
         Subscribe to our newsletter and be the first to know about hot releases,

@@ -7,10 +7,13 @@ export function Navigation() {
         scsvv.
       </Link>
       <Link href="/posts" className="nav-link">
-        all posts
+        resume
+      </Link>
+      <Link href="/posts" className="nav-link">
+        blog
       </Link>
       <Link href="/about" className="nav-link">
-        about
+        contact me!
       </Link>
     </nav>
   )
