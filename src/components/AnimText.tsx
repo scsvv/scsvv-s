@@ -32,7 +32,7 @@ export default function AnimText({ delay }: IAnimTextProps) {
   }, [])
 
   return (
-    <span className="min-h-[400pxs]">
+    <span className="min-h-[400px]">
       <motion.span className="text-6xl">{displayText}</motion.span>
       {done && (
         <>

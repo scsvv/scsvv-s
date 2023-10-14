@@ -28,10 +28,11 @@ export default function page() {
           </a>
         </Button>
       </div>
-      <div className="">
+
+      <div className="pt-5">
         <h2>Latest posts:</h2>
       </div>
-      <div className="mt-10 grid grid-cols-1 pt-5 md:grid-cols-2">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2">
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
         ))}

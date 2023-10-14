@@ -11,8 +11,8 @@ import Footer from '@/components/Footer'
 const meta = {
   title: 'Skorobohatov Sviatoslav - Blog',
   description:
-    'Sleep deprived father. FE Engineer from Ukraine in Romania. Lover of Coffee and Metal',
-  image: `${WEBSITE_HOST_URL}/og-preview.jpg`,
+    'FS Engineer from Ukraine, but in Romania. Lover of Coffee and Metal',
+  image: `${WEBSITE_HOST_URL}/og-preview.svg`,
 }
 
 export const metadata: Metadata = {
